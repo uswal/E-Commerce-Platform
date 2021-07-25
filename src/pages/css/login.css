@@ -1,0 +1,108 @@
+.login-register {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 200;
+  overflow: hidden;
+  transition-duration: 0.4s;
+}
+.login-register .container {
+  width: 50%;
+  font-family: "Open sans";
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 40px;
+  transition-duration: 0.4s;
+  opacity: 0;
+}
+
+.login-register .container .cross {
+  width: 100%;
+  /* text-align: center; */
+  /* margin-right: 90%; */
+  transform: translateX(100%);
+}
+.login-register .container .cross button {
+  background-color: white;
+  outline: none;
+  border: 1px solid white;
+  padding: 5px;
+  transition-duration: 0.4s;
+  color: grey;
+  margin-bottom: 10px;
+}
+.login-register .container .cross button:hover {
+  border-color: black;
+  color: black;
+}
+.hdr {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.hdr-caption {
+  color: Grey;
+  font-style: italic;
+  margin-top: 20px;
+}
+
+.hdr-input {
+  color: rgb(49, 49, 49);
+  margin-top: 20px;
+  font-size: 14px;
+  font-family: "Montserrat";
+}
+
+.sign-in-options {
+  float: left;
+  margin-top: 20px;
+  font-family: "Montserrat";
+  transition-duration: 0.5s;
+  margin-right: 20px;
+}
+
+#sign-in {
+  padding: 10px 30px;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+#sign-in:hover {
+  background-color: #35d5fd;
+}
+#forgot-password {
+  padding-top: 10px;
+  /* margin-left: 20px; */
+  cursor: pointer;
+}
+#forgot-password:hover {
+  color: #35d5fd;
+}
+.register-options {
+  padding: 10px 30px;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transform: translateY(10px);
+}
+
+.register {
+  background-color: white;
+  padding: 8px 28px;
+  color: black;
+  border: 2px solid black;
+  font-weight: bold;
+}
+
+.register:hover {
+  background-color: black;
+  color: white;
+}

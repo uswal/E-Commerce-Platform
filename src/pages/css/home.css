@@ -1,0 +1,87 @@
+.basic-options {
+  width: 80%;
+  margin-left: 10%;
+  overflow: hidden;
+  display: flex;
+  margin-top: 20px;
+}
+.bcol {
+  width: 100%;
+}
+.img-container {
+  margin: 20px;
+  width: 100vw;
+  height: 21vw;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.img-container img {
+  width: 100%;
+  transition-duration: 0.5s;
+  background-position: center;
+}
+.img-container:hover img {
+  width: 110%;
+  transform: translate(-5%, -5%);
+}
+
+.basic-options .img-container a {
+  font-weight: 500;
+  width: 60%;
+  padding: 10px 0;
+  text-align: center;
+  text-decoration: none;
+  margin-left: 20%;
+  background-color: white;
+  color: black;
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 14px;
+  transform: translate(0, -150%);
+  transition-duration: 0.5s;
+}
+.img-container:hover a {
+  margin-top: -34px;
+}
+.img-container a:hover {
+  background-color: #35d5fd;
+  color: white;
+}
+
+.instagram-grid {
+  margin-top: 20px;
+  width: 100%;
+  height: 18vw;
+  overflow: hidden;
+  display: inline-block;
+}
+.insgcol img {
+  width: 16.66%;
+  float: left;
+  transition-duration: 0.4s;
+}
+
+.ig-hdr-container {
+  width: 100vw;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.ig-hdr-container .caption {
+  font-size: 18px;
+}
+
+.ig-hdr-container a {
+  /* padding-top: 10px; */
+  color: black;
+  transition-duration: 0.4s;
+}
+
+.ig-hdr-container a:hover {
+  color: #1da1f2;
+}
+
+.content .instagram-grid .insgcol img:hover {
+  filter: brightness(0.8);
+}

@@ -1,0 +1,42 @@
+.chronicles {
+  width: 80%;
+  margin-left: 10%;
+}
+.chronicles .hdr {
+  margin-top: 80px;
+  text-align: center;
+  margin-bottom: 40px;
+  font-family: "Montserrat";
+  font-size: 24px;
+}
+
+.chronicles .box {
+  background: none;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.chronicles label {
+  font-family: "Montserrat";
+}
+.chronicles .box .cap {
+  font-size: 16px;
+}
+
+.chronicles .box .title {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.chronicles .box .desc {
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 1150px) {
+  .chronicles {
+    width: 100%;
+    margin-left: 0;
+  }
+}

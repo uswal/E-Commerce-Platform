@@ -1,0 +1,365 @@
+.containerr {
+  margin-top: 0;
+  padding-bottom: 2px;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.cole {
+  float: left;
+  width: 30%;
+}
+
+.cole-y {
+  width: 70%;
+}
+
+.y-col {
+  float: left;
+  width: 100%;
+}
+
+/* working on left coln */
+.cole-left {
+  margin-left: 170px;
+  margin-bottom: 10px;
+  margin-right: 50px;
+}
+
+.cole-left .hdr {
+  font-size: 14px;
+  font-family: "Montserrat";
+  font-weight: 600;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.y-col .left {
+  float: left;
+  margin-left: 12px;
+}
+.y-col .left .svg {
+  width: 18px;
+  height: 16px;
+  border: 2px solid rgb(221, 221, 221);
+  padding: 10px 20px;
+  border-radius: 10px;
+  stroke: grey;
+  transition: 0.3s;
+}
+.item-container .svg-label {
+  color: white;
+  font-size: 12px;
+  margin-left: 12px;
+  transform: translateY(12px);
+  transition-duration: 0.4s;
+}
+.item-container .svg-label:hover {
+  color: #2aadff;
+}
+.y-col .left .svg:hover {
+  stroke: black;
+  fill: black;
+  border-color: black;
+}
+
+.y-col .left .active {
+  /* Due to unexpected bug had to use hover and active seperately*/
+  stroke: black;
+  fill: black;
+  border-color: black;
+}
+
+.y-col .lb {
+  padding: 10px 20px;
+  color: grey;
+  border: 2px solid rgb(221, 221, 221);
+  border-radius: 10px;
+  font-size: 14px;
+  outline: none;
+}
+.y-col .lbm {
+  transform: translateX(-25%);
+}
+.y-col .right {
+  margin-right: 170px;
+  display: flex;
+}
+
+.y-col .asc {
+  width: 16px;
+  border: 2px solid rgb(221, 221, 221);
+  padding-left: 16px;
+  padding-right: 10px;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+
+/* ITEMS - GARBAGE CODE BELOW PROBABLY*/
+
+.item-container li {
+  list-style: none;
+}
+.item-container {
+  float: left;
+  margin: 30px 10px;
+  font-family: "Montserrat";
+  overflow: hidden;
+  padding: 4px;
+  cursor: context-menu;
+}
+
+.item-container .img {
+  width: 260px; /* 200 -304*/
+  overflow: hidden;
+  height: 404px;
+  background-color: white;
+}
+
+.item-container img {
+  width: 260px;
+  height: 400px;
+}
+
+.item-container .hidden {
+  position: absolute;
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+.item-container .img:hover .hidden {
+  opacity: 1;
+}
+.hidden-img-container {
+  width: 260px;
+  height: 404px;
+  overflow: hidden;
+  position: absolute;
+  top: -404px;
+}
+.hidden-img {
+  width: 100%;
+  transition-duration: 5s;
+  transition-timing-function: linear;
+}
+.item-container .img:hover .hidden-img {
+  transform: translate(-25px, -25px);
+  transform: scale(1.5);
+}
+
+.heo {
+  width: 260px;
+  height: 404px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.heo .svg {
+  margin-left: 25px;
+  margin-top: 25px;
+  width: 1px;
+  height: 1px;
+  transition-duration: 0.5s;
+  stroke: white;
+}
+
+.heo .svg:hover {
+  stroke: #2aadff;
+}
+.item-container .img:hover .svg {
+  transform: scale(25);
+}
+.heo .add-cart {
+  color: black;
+  width: 140px;
+  font-size: 14px;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 8px 8px;
+  transform: translate(54px, 200px);
+  transition-duration: 0.3s;
+  opacity: 0;
+  font-weight: bold;
+}
+.heo .quick-v {
+  font-size: 10px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  height: 16px;
+  padding-top: 4px;
+  position: absolute;
+  bottom: 0;
+  transform: translateY(-4px);
+  color: black;
+  transition-duration: 0.3s;
+  cursor: context-menu;
+}
+.heo .quick-v:hover {
+  background-color: rgba(255, 255, 255, 1);
+}
+.heo .eye {
+  width: 18px;
+  height: 16px;
+  position: absolute;
+  transform: translate(-30px, -2px);
+}
+.item-container .img:hover .add-cart {
+  transform: translate(54px, 260px);
+  opacity: 1;
+}
+.heo .add-cart:hover {
+  color: white;
+  background-color: black;
+}
+
+/* 21Dec 2020 */
+.item-sizes {
+  display: flex;
+  flex-direction: row;
+}
+
+.item-sizes .size-cont {
+  margin-top: 6px;
+  color: rgb(187, 187, 187);
+  border: 1px solid rgb(187, 187, 187);
+  padding: 4px 8px;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 6px;
+  margin-right: 6px;
+  transition-duration: 0.4s;
+  cursor: context-menu;
+  background-color: white;
+  outline: none;
+  font-family: "Open sans";
+}
+
+.item-sizes .size-active,
+.size-cont:hover {
+  color: black;
+  box-shadow: 0 0 4px grey;
+  border-color: grey;
+}
+
+.item-title {
+  font-size: 16px;
+  text-decoration: none;
+  color: black;
+  outline: none;
+}
+
+.item-price {
+  font-size: 14px;
+}
+
+.padd-help {
+  margin-top: 10px;
+}
+
+/*  */
+.cole .price-options {
+  width: 100%;
+  font-size: 12px;
+}
+.cole .price-options .container input {
+  width: 50%;
+  margin-right: 20px;
+  text-align: center;
+  font-size: 10px;
+}
+
+.cole .price-options .container label {
+  width: 100%;
+  text-align: center;
+}
+
+.cole-x .cole-left {
+  border: 1px solid rgb(194, 193, 193);
+  padding: 10px;
+  padding-top: 5px;
+  overflow: hidden;
+  transition-duration: 0.4s;
+  height: 15px;
+  width: 160px;
+  background-color: whitesmoke;
+}
+
+.cole-x .col-flex-scroll {
+  margin-left: 20px;
+  height: 96px;
+  font-size: 12px;
+}
+
+.cole-x .checkbox {
+  margin-right: 8px;
+}
+/* Exceptions */
+.cole-x .price-case .hdr {
+  margin-bottom: 20px;
+}
+.cole-x .single-ctr {
+  background-color: black;
+  color: white;
+  margin-top: 30px;
+}
+.cole-x .single-ctr .hdr {
+  margin-bottom: 0;
+}
+
+.cole-x .cole-left #sort-by {
+  width: 100%;
+}
+.cole-x .color-case .container {
+  margin-left: 10px;
+  transform: translateX(10px);
+}
+.cole-x .color-case .MuiCheckbox-root {
+  margin: 0;
+  padding: 0;
+}
+
+.cole-x .color-case .MuiFormGroup-root {
+  margin: 0;
+  padding: 0;
+}
+
+.price-case input[type="number"] {
+  margin-top: 10px;
+  padding: 10px 8px;
+  border: 1px solid rgb(194, 194, 194);
+  transition: 0.4s;
+  outline: none;
+  font-family: "Montserrat";
+}
+
+.apply {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.apply button {
+  background-color: #3366ff;
+  outline: none;
+  border: none;
+  padding: 5px 10px;
+  color: white;
+  font-family: "Montserrat";
+  font-weight: bold;
+  transition-duration: 0.4s;
+}
+
+.apply button:hover {
+  background-color: green;
+}
+
+#load {
+  position: relative;
+  box-sizing: border-box;
+  text-align: center;
+  width: 100%;
+  font-family: "Montserrat";
+  /* font-style: italic; */
+  font-size: 16px;
+  display: block;
+  margin: 20px 0;
+}

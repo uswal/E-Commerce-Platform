@@ -1,0 +1,55 @@
+.middle-pop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 100;
+}
+
+.middle-pop .ct {
+  background-color: white;
+  width: 450px;
+  padding: 60px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.middle-pop .ct .hdr {
+  text-align: center;
+}
+
+.middle-pop .ct input {
+  margin-top: 4px;
+  margin-bottom: 2px;
+}
+
+.middle-pop .ct .cross {
+  position: absolute;
+  right: 0;
+  margin-right: 60px;
+  transition-duration: 0.3s;
+  color: rgb(70, 69, 69);
+}
+.middle-pop .ct .cross:hover {
+  color: black;
+}
+.middle-pop .ct .btn {
+  width: 50%;
+}
+
+@media only screen and (max-width: 1150px) {
+  .middle-pop .ct {
+    left: 0%;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: calc(100vw - 20px);
+    padding: 40px 10px;
+  }
+  .middle-pop .ct .cross {
+    margin-right: 20px;
+  }
+}

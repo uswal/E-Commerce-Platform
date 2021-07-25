@@ -1,0 +1,219 @@
+@media only screen and (max-width: 1150px) {
+  /* body {
+    background-color: lightblue;
+  } */
+  /* HOME */
+
+  .hide-on-phone {
+    display: none;
+  }
+  .margin-20-phone {
+    margin-left: 20px;
+  }
+
+  .force-show-on-phone {
+    opacity: 1;
+  }
+
+  #navbar .menu-i {
+    display: block;
+  }
+  #navbar #shop-now,
+  .secondary,
+  #look-book,
+  #bespoke,
+  #stockist,
+  #sooti-chronicles,
+  #about-us,
+  #upnav-middle,
+  #hidden-logo {
+    display: none;
+  }
+  #navbar {
+    height: 64px;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  #navbar .big #navbar-logo {
+    width: 70px;
+    height: auto;
+    /* margin-left: 32px; */
+    transition-duration: 0;
+    transform: translateY(-14px);
+  }
+
+  /* #navbar .nav-contents .hidden-logo {
+    margin-left: 32px;
+    width: 70px;
+  } */
+  .f-side .f-desc,
+  .f-f-t-2 {
+    display: none;
+  }
+  .content .fs .f-side {
+    width: 60vw;
+    transform: translateX(0);
+  }
+
+  .content .fs .f-right {
+    transform: translateX(15vw);
+  }
+
+  .content .fs .f-left {
+    transform: translateX(-15vw);
+  }
+  .content .f-side .f-btn {
+    font-size: 12px;
+    margin-top: 0;
+    padding: 4px;
+    border: none;
+    color: #1da1f2;
+    width: 60px;
+    position: absolute;
+  }
+
+  .content .f-side .f-btn:hover {
+    background: none;
+    border: none;
+    color: #35d5fd;
+  }
+
+  .content .f-right .f-btn {
+    bottom: -10px;
+    right: 10px;
+  }
+  .content .f-left .f-btn {
+    bottom: -10px;
+    left: 0;
+  }
+
+  .content .f-side .f-caption {
+    font-size: 12px;
+  }
+
+  .content .f-side .f-title {
+    font-size: 14px;
+  }
+
+  .content .basic-options {
+    width: 100%;
+    margin-left: 0;
+    /* flex-direction: column; */
+    display: block;
+  }
+  .content .basic-options .img-container {
+    height: 50%;
+    width: calc(50% - 2px);
+    float: left;
+    margin: 1px;
+    padding: 0;
+    margin-bottom: -35px;
+  }
+  .content .basic-options .img-container:hover img {
+    width: 100%;
+    transform: translate(0, 0);
+  }
+  .content .basic-options .img-container:hover a {
+    margin-top: 0;
+  }
+
+  .content .instagram-grid {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: auto;
+  }
+  .content .instagram-grid .insgcol img {
+    width: 100%;
+    margin-bottom: 2px;
+  }
+
+  /* OUR STORY */
+  .content .content-container .col {
+    width: 100%;
+  }
+  .content .content-container .left {
+    padding: 4px;
+  }
+  .content .content-container .right {
+    padding-left: 4px;
+    padding-right: 10px;
+  }
+  .content .content-container .quote {
+    margin: 40px 0;
+    padding: 20px 10px;
+  }
+  /* ALert */
+  .alert {
+    width: 80%;
+  }
+  /* Login popup */
+  #navbar .login-register {
+    display: flex;
+    flex-direction: column;
+  }
+  .rr .rrr .roww {
+    display: flex;
+  }
+
+  #navbar .login-register .container {
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 80vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  #navbar .login-register .container::-webkit-scrollbar {
+    display: none;
+  }
+  #forgot-password {
+    margin-bottom: 50vh;
+  }
+
+  /* My Account */
+  .content .my-account .a .container {
+    display: none;
+  }
+  .content .my-account .b {
+    width: 100vw;
+  }
+  .content .my-account .b .container {
+    margin-left: 5px;
+  }
+
+  .content {
+    margin-top: 22px;
+  }
+
+  #navbar .search-container .card {
+    width: calc(100% / 2);
+  }
+  .my-account .history {
+    transform: translateX(-4px);
+    width: calc(100% - 2px);
+  }
+  .my-account .b {
+    width: 100%;
+    padding: 0;
+    padding-right: -170px;
+  }
+  .my-account .b .table {
+    width: 100%;
+  }
+  #navbar .middle-pop {
+    width: 100vw;
+  }
+  #navbar .middle-pop .ct {
+    width: (100% - 10px);
+  }
+  .rrr {
+    width: calc(100vw - 30px);
+    margin: 0;
+    transform: translateX(-160px);
+  }
+}

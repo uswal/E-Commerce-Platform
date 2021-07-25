@@ -1,0 +1,57 @@
+.red {
+  color: red;
+}
+
+#upnav {
+  width: 100%;
+  height: 20px;
+  background-color: whitesmoke;
+  overflow: hidden;
+}
+#upnav li {
+  list-style: none;
+  float: left;
+  color: grey;
+  font-size: 13px;
+  padding-bottom: 10px;
+}
+#upnav a {
+  text-decoration: none;
+  color: grey;
+  transition: 0.5s;
+}
+#upnav a:hover {
+  color: #2aadff;
+}
+.upnav-left {
+  margin-left: 10px;
+  width: 20%;
+}
+.upnav-left a {
+  margin-right: 10px;
+}
+.upnav-left:hover {
+  color: red;
+}
+#upnav-middle {
+  text-align: center;
+  width: 60%;
+}
+#upnav-middle p {
+  width: 100%;
+  text-align: center;
+}
+.upnav-right {
+  position: absolute;
+  right: 15px;
+  color: grey;
+  outline: none;
+  border: none;
+  background-color: whitesmoke;
+  font-size: 12px;
+  margin-top: 2px;
+}
+
+.upnav-right option {
+  padding: 10px;
+}

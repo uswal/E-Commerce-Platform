@@ -1,0 +1,253 @@
+.black-btn {
+  /* margin-left: 15px; */
+  margin-top: 10px;
+  padding: 0 10px;
+  height: 40px;
+  background-color: black;
+  border: none;
+  color: white;
+  font-family: "Montserrat";
+  transition-duration: 0.3s;
+  outline: none;
+}
+
+.black-btn:hover {
+  background-color: #1da1f2;
+}
+
+.grey-font {
+  color: grey;
+}
+.float-right {
+  float: Right;
+  margin-right: 10px;
+}
+.fsocials .icons {
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+  margin-top: 4px;
+  transition-duration: 0.4s;
+}
+
+.fsocials .fill:hover {
+  fill: #1da1f2;
+  stroke: #1da1f2;
+}
+
+.fsocials .no-fill:hover {
+  stroke: #1da1f2;
+}
+a {
+  text-decoration: none;
+}
+.darkblue-hover {
+  color: black;
+  transition-duration: 0.4s;
+  text-decoration: none;
+}
+.darkblue-hover:hover {
+  color: #1da1f2;
+}
+button {
+  outline: none;
+  border: none;
+}
+input[type="text"],
+input[type="password"],
+input[type="file"],
+input[type="color"],
+#country,
+.number,
+#lb-list {
+  margin-top: 10px;
+  padding: 10px 8px;
+  border: 1px solid rgb(194, 194, 194);
+  transition: 0.4s;
+  outline: none;
+  font-family: "Montserrat";
+}
+
+.row-flex {
+  display: flex;
+  flex-direction: row;
+  font-family: "Open sans";
+}
+
+.col-flex {
+  display: flex;
+  flex-direction: column;
+  font-family: "Open sans";
+}
+
+.col-flex-scroll {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #cac9c9;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/*  */
+.loader {
+  font-size: 10px;
+  margin: 50px auto;
+  text-indent: -9999em;
+  width: 11em;
+  height: 11em;
+  border-radius: 50%;
+  background: #ffffff;
+  background: -moz-linear-gradient(
+    left,
+    #ffffff 10%,
+    rgba(255, 255, 255, 0) 42%
+  );
+  background: -webkit-linear-gradient(
+    left,
+    #ffffff 10%,
+    rgba(255, 255, 255, 0) 42%
+  );
+  background: -o-linear-gradient(left, #ffffff 10%, rgba(255, 255, 255, 0) 42%);
+  background: -ms-linear-gradient(
+    left,
+    #ffffff 10%,
+    rgba(255, 255, 255, 0) 42%
+  );
+  background: linear-gradient(
+    to right,
+    #ffffff 10%,
+    rgba(255, 255, 255, 0) 42%
+  );
+  position: relative;
+  -webkit-animation: load3 1.4s infinite linear;
+  animation: load3 1.4s infinite linear;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+}
+.loader:before {
+  width: 50%;
+  height: 50%;
+  background: #ffffff;
+  border-radius: 100% 0 0 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+}
+.loader:after {
+  background: #0dc5c1;
+  width: 75%;
+  height: 75%;
+  border-radius: 50%;
+  content: "";
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+@-webkit-keyframes load3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes load3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+/* Non-copy text */
+* {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/* non-copy text end */
+
+/* From the blog */
+.btn {
+  outline: "none";
+  padding: 6px 30px;
+  outline: none;
+  font-family: "Montserrat";
+  transition-duration: 0.3s;
+  font-size: 16px;
+}
+
+.btn-blue {
+  background-color: #0066ff;
+  color: white;
+  border: 1px solid #0066ff;
+}
+
+.btn-blue:hover {
+  color: #0066ff;
+  background-color: white;
+}
+.btn-red {
+  background-color: #ff0033;
+  color: white;
+  border: 1px solid #ff0033;
+}
+
+.btn-red:hover {
+  color: #ff0033;
+  background-color: white;
+}
+
+.btn-black-hollow {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+
+.btn-black-hollow:hover {
+  background-color: black;
+  color: White;
+}
+
+.btn-green {
+  background-color: #00cc00;
+  color: white;
+  border: 1px solid #00cc00;
+}
+.btn-green:hover {
+  background-color: white;
+  color: #00cc00;
+}

@@ -1,0 +1,9 @@
+.watsapplogo {
+  bottom: 100px;
+  right: 30px;
+  position: fixed;
+  height: 50px;
+  width: 50px;
+  transition-duration: 0.5s;
+  z-index: 100;
+}

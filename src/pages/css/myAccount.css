@@ -1,0 +1,136 @@
+.my-account {
+  width: 100vw;
+  min-height: 80vh;
+}
+
+.my-account .hdr {
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+.my-account .small-hdr {
+  font-family: "Montserrat";
+}
+.my-account .colm {
+  float: left;
+}
+
+.my-account button {
+  margin-top: 10px;
+  transition-duration: 0.4s;
+  padding: 10px 20px;
+  outline: none;
+  border: none;
+  font-family: "Montserrat";
+  font-weight: bold;
+}
+.my-account .black {
+  color: white;
+  background-color: black;
+  margin-right: 10px;
+}
+.my-account .black:hover {
+  background-color: #1da1f2;
+}
+.my-account .light-grey:hover {
+  color: white;
+  background-color: black;
+}
+
+/* a */
+.my-account .a {
+  width: 35%;
+}
+.my-account .a .container {
+  margin-left: 170px;
+}
+
+.my-account .a .container ul {
+  list-style: none;
+}
+
+.my-account .a .container li {
+  margin-top: 10px;
+  margin-left: 10px;
+  color: grey;
+  font-family: "Montserrat";
+}
+
+.my-account .a .container li:hover {
+  font-weight: bold;
+}
+
+.my-account .a .logout {
+  width: 90px;
+  margin-top: 40px;
+}
+
+/* b */
+.my-account .b {
+  width: 65%;
+}
+
+/*  */
+.history {
+  width: calc(100% - 170px);
+}
+
+.history th,
+td {
+  padding: 10px 0;
+  text-align: center;
+  overflow: hidden;
+}
+.history table td {
+  border: 1px solid grey;
+}
+.history table .items {
+  max-width: 150px;
+}
+.history table .small-t {
+  width: 140px;
+}
+
+.if-no-transactions {
+  margin: 10px 0;
+}
+
+.if-no-transactions a {
+  color: #1da1f2;
+}
+
+.account-information .small-hdr {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.account-information .grey-font {
+  margin-left: 10px;
+}
+
+.my-account .subscribe:hover {
+  background-color: green;
+  color: white;
+}
+
+.my-account .unsubscribe {
+  background-color: rgb(165, 0, 0);
+  color: white;
+}
+
+.my-account .unsubscribe:hover {
+  background-color: red;
+}
+
+.my-account .pass-hidden input {
+  max-width: 250px;
+}
+
+.my-account .pass-hidden .lbl {
+  margin-top: 22px;
+}
+
+.card .download:hover {
+  background-color: #33cc66;
+  color: white;
+}

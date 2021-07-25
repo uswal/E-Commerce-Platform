@@ -1,0 +1,51 @@
+.lookbook {
+  width: 80%;
+  margin-left: 10%;
+}
+.lookbook .hdr {
+  margin-top: 80px;
+  text-align: center;
+  margin-bottom: 40px;
+  font-family: "Montserrat";
+  font-size: 24px;
+}
+.lookbook .ctr {
+  width: calc(33% - 10px);
+  margin: 20px 5px;
+  float: left;
+}
+
+.lookbook .ctr label {
+  font-family: "Montserrat";
+}
+.lookbook .ctr img {
+  height: 100%;
+  width: 100%;
+  transition-duration: 0.4s;
+}
+.lookbook .ctr a {
+  color: black;
+  transition-duration: 0.3s;
+}
+.lookbook .ctr a:hover {
+  color: #1da1f2;
+}
+.lookbook .ctr a:hover img {
+  filter: brightness(70%);
+}
+@media only screen and (max-width: 1150px) {
+  .lookbook {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .lookbook .ctr {
+    width: calc(50% - 4px);
+    margin: 10px 2px;
+    float: left;
+  }
+
+  .lookbook .hdr {
+    margin-left: 20px;
+  }
+}

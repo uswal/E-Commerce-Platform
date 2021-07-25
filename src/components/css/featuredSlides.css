@@ -1,0 +1,88 @@
+.fs {
+  margin-bottom: -35px;
+}
+.fs .f-side {
+  display: flex;
+  flex-direction: column;
+  float: right;
+  width: 30vw;
+  transition-duration: 0.2s;
+}
+.fs .f-right {
+  transform: translateX(25vw);
+}
+.fs .f-left {
+  transform: translateX(-25vw);
+}
+.f-side .f-caption {
+  font-size: 14px;
+}
+
+.f-side .f-title {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.f-side .f-desc {
+  color: grey;
+  margin-top: 20px;
+}
+
+.f-side a {
+  margin-top: 20px;
+  color: black;
+}
+.f-side .f-btn {
+  font-size: 16px;
+  margin-top: 20px;
+  text-align: center;
+  padding: 8px 20px;
+  border: 2px solid black;
+  width: 100px;
+  border-radius: 70px;
+  font-weight: 500;
+  transition-duration: 0.5s;
+  cursor: pointer;
+  background: none;
+}
+
+.f-side .f-btn:hover {
+  border-color: #1da1f2;
+  background-color: #1da1f2;
+  color: white;
+}
+
+.fs {
+  padding-bottom: 40px;
+}
+.each-slide > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  height: 38vw;
+}
+
+.each-slide span {
+  padding: 20px;
+  font-size: 20px;
+  background: #efefef;
+  text-align: center;
+}
+
+.each-slide img {
+  width: 100vw;
+}
+
+.react-slideshow-container + div.indicators {
+  margin-top: -14px;
+}
+.react-slideshow-container + div.indicators li {
+  /* margin: 0 1px; */
+  margin-bottom: -86px;
+}
+.react-slideshow-container + div.indicators .each-slideshow-indicator:before {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}

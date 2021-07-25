@@ -1,0 +1,92 @@
+.znav {
+  height: 40px;
+  width: 100%;
+  background: whitesmoke;
+  font-size: 13px;
+  font-family: "Raleway";
+}
+.tp {
+  margin-left: 120px;
+  transform: translate(0, 12px);
+}
+.znav a {
+  text-decoration: none;
+  color: black;
+  transition-duration: 0.3s;
+}
+.znav a:hover {
+  color: #2aadff;
+}
+
+.znav label {
+  color: grey;
+}
+.space {
+  padding-left: 10px;
+}
+/*  */
+.content-container {
+  width: 100%;
+}
+
+.content-container p {
+  color: Black;
+  font-size: 12px;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+.content-container .col {
+  width: 50%;
+  float: left;
+}
+
+.content-container .left {
+  padding-left: 120px;
+  padding-right: 30px;
+}
+
+.content-container .right {
+  padding-left: 30px;
+  padding-right: 120px;
+}
+
+.grid-item {
+  margin-top: 90px;
+}
+
+.grid-item label {
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "Open sans";
+}
+
+.grid-item p {
+  margin-top: 15px;
+  font-size: 16px;
+  color: grey;
+}
+
+.quote {
+  margin: 60px 120px;
+  float: left;
+  background-color: whitesmoke;
+  padding: 40px 60px;
+  border-radius: 2px;
+}
+
+.quote label {
+  width: 100%;
+  font-family: "Open sans";
+  font-size: 14px;
+  color: grey;
+  font-weight: 100;
+}
+@media only screen and (max-width: 1150px) {
+  .why-us .grid-item {
+    width: calc(100vw - 40px);
+    margin-left: 12px;
+    /* background-color: pink; */
+  }
+}

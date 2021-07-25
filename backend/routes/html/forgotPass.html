@@ -1,0 +1,123 @@
+<html>
+  <head>
+    <link rel="icon" href="https://www.sootistudio.com/assets/images/Logo_1.png">
+    <title>Reset Password</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link
+          href="https://fonts.googleapis.com/css?family=Montserrat"
+          rel="stylesheet"
+        ></link>
+  </head>
+  <body>
+    <center id="doc">
+      <label>Reset Password</label> <br />
+      <input
+        type="password"
+        id="new-password"
+        placeholder="Enter new password!"
+      />
+      <br />
+
+      <input
+        type="password"
+        id="retype-new-password"
+        placeholder="Re-enter new password!"
+      />
+      <br />
+
+      <br /><label id="err" style="color: red; font-size: 16px"></label> <br />
+      <button class="btn btn-green" onClick="validate()">Submit</button>
+    </center>
+  </body>
+
+  <style>
+    center {
+      margin-top: 40px;
+    }
+    input[type="password"] {
+      min-width: 500px;
+      max-width: 100vw;
+      padding: 10px;
+      font-size: 16px;
+      margin-top: 10px;
+      border: 1px solid rgb(194, 194, 194);
+      transition: 0.4s;
+      outline: none;
+      font-family: "Montserrat";
+    }
+    center label {
+      font-family: "Montserrat";
+      font-size: 40px;
+      font-weight: bold;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    .btn {
+      outline: "none";
+      padding: 6px 30px;
+      outline: none;
+      font-family: "Montserrat";
+      transition-duration: 0.3s;
+      font-size: 16px;
+    }
+    .btn-green {
+      background-color: #00cc00;
+      color: white;
+      border: 1px solid #00cc00;
+      margin-top: 20px;
+    }
+    .btn-green:hover {
+      background-color: white;
+      color: #00cc00;
+    }
+  </style>
+
+  <script>
+    const api = `https://sootistudio.com/api/mail`;
+    const doc = document.getElementById("doc");
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    const id = urlParams.get("id");
+    //console.log(id);
+    if (id === null) doc.innerHTML = "<label>Link broken!</label>";
+    axios
+      .post(`${api}/reset-check-id`, { id })
+      .then((res) => {
+        console.log(res.data);
+        if(res.data === false)
+          doc.innerHTML = "<label>Link broken!</label>";
+      });
+
+    function validate() {
+      const p1 = document.getElementById("new-password").value;
+      const p2 = document.getElementById("retype-new-password").value;
+      const errElem = document.getElementById("err");
+
+      if (p1 !== p2) errElem.innerHTML = "Both passwords did not match!";
+      else if (p1.length > 20 || p1.length < 6)
+        errElem.innerHTML = "Password has to be in between 6 and 20";
+      else {
+        errElem.innerHTML = "";
+        updatePassword(p1, errElem);
+      }
+    }
+    function updatePassword(pass, errElem) {
+      axios
+        .post(`${api}/reset-pass-update-pass`, {
+          id,
+          pass,
+        })
+        .then((res) => {
+          console.log(res.data);
+          if (res.data === false) {
+            errElem.innerHTML =
+              "Something went wrong! Try resending reset email.";
+          } else
+            doc.innerHTML =
+              "<label>Password changed sucessfully!<br>Close this tab and login again</label>";
+        });
+    }
+  </script>
+</html>

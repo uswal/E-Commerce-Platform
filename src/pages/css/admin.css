@@ -1,0 +1,41 @@
+#admin-container {
+  width: 100%;
+}
+.admin-container {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: #330000;
+}
+
+.admin-login {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  width: 400px;
+  position: absolute;
+  transform: translate(40vw, 30vh);
+  padding: 50px 0;
+}
+
+.admin-login input {
+  margin: 10px 40px;
+}
+
+.admin-login .btn {
+  margin: 0 40px;
+  padding: 10px 0;
+  text-align: center;
+  background-color: #35d5fd;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
+  margin-top: 10px;
+}
+
+.admin-login .btn:hover {
+  background-color: #33ff33;
+}
+
+/* DASHBOARD */

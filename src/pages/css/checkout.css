@@ -1,0 +1,135 @@
+.progress-bar {
+  width: 80%;
+  height: 26px;
+  background-color: rgb(216, 216, 216);
+  margin-left: 170px;
+  margin-bottom: 40px;
+  transition-duration: 0.3s;
+  font-family: "Montserrat";
+  font-weight: bold;
+  color: white;
+}
+.progress {
+  width: 50%;
+  background-color: #eb5202;
+  height: 100%;
+  transition-duration: 0.3s;
+}
+.progress p {
+  width: 100%;
+  text-align: center;
+}
+.progress-bar .right-hdr {
+  position: absolute;
+  right: 20%;
+  transform: translateY(-24px);
+}
+/* Shipping */
+.checkout .col {
+  float: left;
+}
+
+.checkout label {
+  font-family: "Montserrat";
+}
+
+.checkout .col-1 {
+  width: calc(50% + 170px);
+  margin-left: 170px;
+}
+
+.checkout .col-1 .big-hdr {
+  font-size: 30px;
+  border-bottom: 1px solid whitesmoke;
+  padding-bottom: 10px;
+}
+
+.checkout .col .col-flex {
+  margin: 10px 0;
+}
+
+/*  */
+.checkout-m .column {
+  float: left;
+  width: 50%;
+}
+.order-summary {
+  margin-left: 80px;
+  padding: 40px;
+  background-color: whitesmoke;
+  width: 50%;
+}
+.order-summary .cart-items .container {
+  margin-top: 40px;
+}
+.order-summary .cart-items .container img {
+  width: 150px;
+}
+
+.order-summary .cart-items .right {
+  margin-left: 20px;
+}
+
+.order-summary .cart-items .hdr-small {
+  font-size: 14px;
+}
+
+.order-summary .hdr-smalll {
+  margin-top: 10px;
+
+  font-family: "Montserrat";
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgb(180, 180, 180);
+}
+
+.checkout .black-btn {
+  font-size: 18px;
+}
+
+.checkout-m .details {
+  background-color: white;
+  margin-top: 40px;
+  padding: 20px;
+}
+
+.checkout-m .details .hdr-smalll {
+  margin-bottom: 10px;
+}
+
+.razorpay {
+  margin-top: 20px;
+  max-width: 320px;
+  border: 1px solid whitesmoke;
+  padding: 10px;
+  transition-duration: 0.4s;
+}
+
+.razorpay:hover {
+  border-color: grey;
+}
+
+.checkout .btn-green {
+  margin-top: 20px;
+  width: 160px;
+}
+
+@media only screen and (max-width: 1150px) {
+  .progress-bar {
+    width: 100%;
+    margin-left: 0;
+  }
+  .checkout-m {
+    display: flex;
+    flex-direction: column;
+  }
+  .checkout .col {
+    width: calc(100vw - 20px);
+    margin-left: 10px;
+    margin-bottom: 40px;
+  }
+  .checkout-m .column .order-summary {
+    width: calc(100vw - 80px);
+    overflow: hidden;
+    margin: 0;
+  }
+}

@@ -1,0 +1,331 @@
+.grey {
+  height: 500px;
+  width: 100%;
+  background-color: whitesmoke;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.content {
+  padding-top: 0;
+}
+
+.sticky + .content {
+  padding-top: 30px;
+  background-color: pink;
+}
+#navbar {
+  z-index: 150;
+}
+.content {
+  transition-duration: 0.3s;
+}
+.navbar {
+  height: 170px; /* 64px */
+  width: 100%;
+  background-color: white;
+  z-index: 10;
+  box-shadow: 0px 4px 8px -6px rgba(0, 0, 0, 0.5);
+  transition-duration: 0.4s;
+  position: relative;
+}
+
+/* COMPLETE REWORK - 03/01/2021 */
+#navbar p {
+  width: 100%;
+  text-align: center;
+}
+
+#navbar .nav-a a {
+  text-decoration: none;
+  color: black;
+  /* margin-right: 40px; */
+  font-size: 16px;
+  font-family: "Nunito";
+  transition-duration: 0.4s;
+}
+#shop-now,
+#look-book,
+#bespoke,
+#stockist,
+#sooti-chronicles {
+  margin-right: 40px;
+}
+
+#navbar .fsocials a {
+  margin-right: 40px;
+}
+#navbar .nav-a a:hover {
+  color: #1da1f2;
+}
+#navbar .big {
+  transform: translateY(18px);
+}
+#navbar .big .navbar-logo {
+  width: 100px;
+  height: 80px;
+  /* transform: translateX(-33px); */
+}
+
+#navbar .nav-contents {
+  transform: translateY(38px);
+  transition-duration: 0.4s;
+}
+
+#navbar .nav-contents .hidden-logo {
+  width: 0;
+  transform: translateY(22px);
+  transition-duration: 0.2s;
+}
+
+#navbar .secondary .fsocials {
+  position: absolute;
+  transform: translateY(-58px);
+  left: 100px;
+  display: flex;
+  flex-direction: row;
+  transition-duration: 0.2s;
+}
+
+#navbar .secondary .fsocials .icons {
+  margin: 0;
+  padding: 0;
+  margin-right: -50px;
+}
+
+#navbar .secondary .right {
+  position: absolute;
+  right: 100px;
+  transform: translateY(-58px);
+  transition-duration: 0.2s;
+}
+#navbar .icons {
+  transition-duration: 0.4s;
+}
+#navbar .secondary .right .icons {
+  /* margin-right: 10px; */
+  padding: 0 5px;
+
+  /* background-color: red; */
+  padding-bottom: 20px;
+}
+
+#navbar #cart-count {
+  position: absolute;
+  transform: translate(-20px, -16px);
+  transition-duration: 0.4s;
+}
+
+#navbar .no-fill:hover {
+  stroke: #1da1f2;
+}
+
+#navbar .no-fill:hover + #cart-count {
+  color: #1da1f2;
+}
+
+/* Drop downs */
+.hover-fix {
+  background-color: white;
+  height: 250px;
+  margin-top: 23px;
+  box-shadow: 0px 4px 8px -6px rgba(0, 0, 0, 0.5);
+}
+.hover-fix .col {
+  float: left;
+}
+.hover-fix .left {
+  width: 40%;
+}
+
+.hover-fix .left .contents {
+  margin-left: 40%;
+  height: 100%;
+  transform: translateY(15px);
+}
+.hover-fix .left .contents a {
+  padding: 5px 0;
+}
+
+.hover-fix .right {
+  width: 50%;
+  height: 100%;
+}
+
+.hover-fix .right .contents {
+  margin: 20px 0;
+}
+
+.hover-fix .right .contents .tiles {
+  height: 200px;
+  margin-right: 30px;
+  border: 1px solid white;
+  transition-duration: 0.4s;
+}
+.hover-fix .right .contents .tiles:hover {
+  border: 1px solid black;
+}
+.shop-now-eq {
+  position: absolute;
+  width: 100%;
+  visibility: hidden;
+  opacity: 0;
+  display: none;
+  transition-duration: 0.5s;
+  z-index: 1000;
+  transform: translateY(38px);
+}
+.shop-now-eq:hover {
+  display: block;
+}
+/* .shop-now-eq-helper {
+  background-color: white;
+  border: 1px solid whitesmoke;
+  border-radius: 1px;
+  padding: 20px 60px;
+  padding-right: 180px;
+} */
+
+/* Mini-account */
+.mini-account a {
+  width: 100%;
+  margin-bottom: 4px;
+}
+
+.ac-eq {
+  /* vis op */
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  /* background-color: red; */
+  margin-left: -32px;
+  padding-top: 30px;
+  width: 20px;
+  /* width: 170px; */
+  display: none;
+  transform: translate(74px, -46px);
+  transition-duration: 0.1s;
+  z-index: 1000;
+}
+.ac-eq .mini-account {
+  width: 160px;
+  border: 1px solid grey;
+  background-color: white;
+  text-align: center;
+  padding: 20px 0;
+  transform: translateX(-50%);
+}
+.ac-eq .mini-account a {
+  margin-bottom: 10px;
+}
+.ac-eq:hover {
+  /* visibility: visible;
+  opacity: 1; */
+  display: block;
+}
+
+.menu-i {
+  position: absolute;
+  transform: translate(10px, 20px);
+  display: none;
+  z-index: 2;
+}
+
+/* NavBarMenu */
+#navbar .ham {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  font-family: "Nunito";
+  z-index: 105;
+  transition-duration: 0.4s;
+}
+#navbar .ham .ctr {
+  width: 0;
+  height: 100%;
+  background-color: white;
+  transition-duration: 0.4s;
+}
+#navbar .title-n {
+  padding: 8px 0;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  transition-duration: 0.3s;
+}
+
+#navbar .cardd {
+  padding: 10px;
+  width: calc(100% - 20px);
+  border-bottom: 1px solid whitesmoke;
+}
+
+#navbar .ctr .contents {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  height: calc(100% - 30px);
+  padding-bottom: 40px;
+}
+
+#navbar .sub-links {
+  margin-top: 5px;
+  margin-left: 20px;
+}
+
+#navbar .cardd a {
+  color: black;
+  font-weight: bold;
+  margin-left: 20px;
+  transition-duration: 0.4s;
+}
+#navbar .cardd .sub-links a {
+  color: grey;
+  font-weight: 400;
+  font-family: "Montserrat";
+  /* font-family: "Satisfy"; */
+  /* font-size: 18px; */
+}
+
+#navbar .cardd a:hover {
+  color: #1da1f2;
+}
+
+#navbar .cardd .float-right {
+  float: right;
+}
+#navbar .cardd #cart-count {
+  display: none;
+}
+
+#navbar .cardd .mini-account a {
+  transform: translateX(-32px);
+  text-align: right;
+  font-weight: normal;
+  font-family: "Montserrat";
+}
+
+#navbar .title-n .cross-n {
+  color: white;
+  background: none;
+  font-size: 16px;
+  transform: translate(78px, 1px);
+}
+#navbar .cardd #currency-upnavv {
+  margin-left: 20px;
+}
+#navbar .last-cardd {
+  margin-bottom: 40px;
+}
+/* KEEP THIS LAST - SOME BUG */
+.vis {
+  /* visibility: visible; */
+  /* opacity: 1; */
+  display: block;
+  z-index: 500;
+}

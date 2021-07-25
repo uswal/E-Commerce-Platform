@@ -1,0 +1,79 @@
+.search-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  color: white;
+  z-index: 200;
+}
+
+.search-container input {
+  margin-top: 80px;
+  width: 80%;
+  background-color: Black;
+  border: none;
+  border-bottom: 2px solid rgb(207, 205, 205);
+  color: white;
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-weight: bold;
+}
+.search-container input:focus {
+  border-bottom: 2px solid white;
+}
+.search-container .btn {
+  padding: 10px 20px;
+  margin-left: 10px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background-color: black;
+  color: white;
+  transform: translateY(10px);
+}
+
+.search-container .container {
+  margin-top: 80px;
+  overflow-y: auto;
+  width: calc(100% - 6px);
+  height: calc(100vh - 205px);
+  overflow-x: hidden;
+}
+
+.search-container .card {
+  background-color: black;
+  width: calc(100% / 6);
+  float: left;
+  padding: 0;
+  margin-bottom: 4px;
+}
+
+.search-container .card .border-helper {
+  width: 100%;
+  height: 100%;
+  border: 3px solid black;
+  border-bottom: none;
+  border-top: 2px solid black;
+}
+
+.search-container .card img {
+  width: 100%;
+}
+
+.search-container .card .border-helper a {
+  font-size: 18px;
+  text-decoration: none;
+  color: rgb(207, 205, 205);
+  width: calc(100%);
+  width: 100%;
+  overflow: hidden;
+  transition-duration: 0.3s;
+  font-family: "Montserrat";
+  font-weight: bold;
+}
+
+.search-container .card .border-helper a:hover {
+  color: white;
+}

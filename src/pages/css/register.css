@@ -1,0 +1,104 @@
+input:focus {
+  border-color: black;
+}
+.rr {
+  width: 100%;
+}
+
+.rrr {
+  display: flex;
+  flex-direction: column;
+  margin: 60px 170px;
+}
+
+.hdr {
+  font-size: 20px;
+  font-weight: 800;
+  font-family: "Open sans";
+}
+
+.roww {
+  width: 100%;
+}
+
+.coll {
+  width: 45%;
+  float: left;
+}
+
+.coll-b {
+  float: right;
+}
+
+.caption {
+  color: rgb(49, 49, 49);
+  margin-top: 20px;
+  font-size: 14px;
+  font-family: "Montserrat";
+}
+
+.cb1 {
+  margin-top: 10px;
+}
+
+.cb1 label {
+  margin-left: 10px;
+}
+
+/*  2nd*/
+.hdr2 {
+  margin-top: 50px;
+}
+
+.tc {
+  margin-left: 15px;
+}
+
+.back {
+  margin-top: 20px;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 40px;
+  padding: 10px 0;
+  font-family: "Montserrat";
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.4s;
+  color: black;
+}
+.back:hover {
+  background-color: black;
+  color: white;
+}
+.create {
+  margin-top: 20px;
+  text-align: center;
+  border: 2px solid black;
+  padding: 10px 0;
+  font-family: "Montserrat";
+  font-weight: bold;
+  cursor: pointer;
+  float: right;
+  transition: 0.4s;
+  background-color: black;
+  color: white;
+}
+
+.create:hover {
+  background-color: #35d5fd;
+  border-color: #35d5fd;
+}
+
+.red {
+  font-weight: bold;
+  margin-left: 4px;
+}
+
+.tcc {
+  margin: 10px 0;
+}
+
+.err {
+  color: red;
+  margin: 10px 0;
+}
