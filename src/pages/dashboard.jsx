@@ -14,6 +14,7 @@ import DeleteProduct from "../components/dashboard/deleteProductFromId";
 import EditProduct from "../components/dashboard/editProductFromId";
 import BackendLookbook from "../components/dashboard/backendLookbook";
 import Chronicles from "../components/dashboard/chroniclesBackend";
+import ApproveOrders_2 from "../components/dashboard/approveOrders_2";
 
 import "./css/dashboard.css";
 
@@ -44,7 +45,7 @@ class Dashboard extends Component {
             </li>
             <li>Shop a look items</li>
             <li onClick={() => this.changeBB(<HomeSlides />)}>Home Slides</li>
-            <li onClick={() => this.changeBB(<ApproveOrders />)}>
+            <li onClick={() => this.changeBB(<ApproveOrders_2 />)}>
               Approve Orders
             </li>
             <li onClick={() => this.changeBB(<OrdersAndIncome />)}>
