@@ -162,6 +162,11 @@ router.route("/cancelled").post((req, res) => {
 });
 
 router.route("/get-invoice").post(async (req, res) => {
+  //! -- TP - [TP/(1+r) x r]
+  /*
+   TP - Total Price    
+    R - Rate
+  */
   const _id = req.body._id;
 
   Transaction.findOne({ _id }, async (err, result) => {

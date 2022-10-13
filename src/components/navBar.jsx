@@ -7,6 +7,7 @@ import ScriptTag from "react-script-tag";
 import NavBarMenu from "./navBarMenu";
 import NavRightElements from "./navRightElements";
 import { MyContext } from "./myProvider";
+import CenterPop from "./centerPop";
 
 // ! Navigation bar script isn't working as intended
 
@@ -443,6 +444,7 @@ class NavBar extends Component {
           </div>
         </div>
         {this.state.navScroll}
+        <CenterPop />
       </div>
     );
   }

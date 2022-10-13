@@ -1,3 +1,10 @@
+.hr {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(128, 128, 128, 0.438);
+  margin: 10px 0;
+}
+
 .black-btn {
   /* margin-left: 15px; */
   margin-top: 10px;

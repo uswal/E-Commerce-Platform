@@ -1,0 +1,31 @@
+.cp {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.cp .center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 40%;
+  min-height: 40%;
+  max-height: 100%;
+  max-width: 100%;
+  padding: 40px;
+  background-color: white;
+}
+
+.cp .title {
+  width: 100%;
+  text-align: Center;
+}
+
+.cp .title .cross {
+  position: absolute;
+  right: 40px;
+}
